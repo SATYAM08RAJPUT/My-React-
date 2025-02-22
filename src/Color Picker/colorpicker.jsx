@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./colorPicker.css";
+
 const ColorPicker = () => {
   const [color, sertColor] = useState("white");
   const handleColorPicker = (e) => {
