@@ -10,6 +10,7 @@ import SumArray from "./Sum/arraySum";
 import Timer from "./Timer/timer";
 import WindowResize from "./Window Event/windowresize";
 import ModalTwo from "./Modal Component/modal2";
+import DyanmiSearchBar from "./Dynamic Search Bar/dynamicSearchBar";
 
 function App() {
   const [view, setView] = useState(false);
@@ -38,6 +39,7 @@ function App() {
       <ModalTwo isopen={view} onclose={handleCloseModal}>
         <p>Helo satyam</p>
       </ModalTwo>
+      <DyanmiSearchBar url={"https://jsonplaceholder.typicode.com/posts"} />
     </>
   );
 }
