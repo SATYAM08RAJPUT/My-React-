@@ -11,6 +11,7 @@ import Timer from "./Timer/timer";
 import WindowResize from "./Window Event/windowresize";
 import ModalTwo from "./Modal Component/modal2";
 import DyanmiSearchBar from "./Dynamic Search Bar/dynamicSearchBar";
+import FetchApi from "./fetching API/fetchingAPI";
 
 function App() {
   const [view, setView] = useState(false);
@@ -39,7 +40,8 @@ function App() {
       <ModalTwo isopen={view} onclose={handleCloseModal}>
         <p>Helo satyam</p>
       </ModalTwo>
-      <DyanmiSearchBar url={"https://jsonplaceholder.typicode.com/posts"} />
+      {/* <DyanmiSearchBar url={"https://jsonplaceholder.typicode.com/posts"} /> */}
+      <FetchApi />
     </>
   );
 }
