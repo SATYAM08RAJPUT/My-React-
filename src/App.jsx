@@ -17,6 +17,7 @@ import FirstUseReducer from "./Hooks/UseReducer/firstExample";
 import SecondExample from "./Hooks/UseReducer/SecondExample";
 import ShoppingCard from "./ShoppingCart.jsx/shoppingCart";
 import TableGrid from "./Table/table";
+import StudentGrid from "./Students Grid/student";
 
 function App() {
   const [view, setView] = useState(false);
@@ -60,7 +61,8 @@ function App() {
       {/* <FirstUseReducer /> */}
       {/* <SecondExample /> */}
       {/* <ShoppingCard /> */}
-      <TableGrid />
+      {/* <TableGrid /> */}
+      <StudentGrid />
     </>
   );
 }
