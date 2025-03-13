@@ -18,6 +18,7 @@ import SecondExample from "./Hooks/UseReducer/SecondExample";
 import ShoppingCard from "./ShoppingCart.jsx/shoppingCart";
 import TableGrid from "./Table/table";
 import StudentGrid from "./Students Grid/student";
+import UpdateText from "./Update Text/updateText";
 
 function App() {
   const [view, setView] = useState(false);
@@ -62,7 +63,8 @@ function App() {
       {/* <SecondExample /> */}
       {/* <ShoppingCard /> */}
       {/* <TableGrid /> */}
-      <StudentGrid />
+      {/* <StudentGrid /> */}
+      <UpdateText />
     </>
   );
 }
