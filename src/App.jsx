@@ -19,6 +19,7 @@ import ShoppingCard from "./ShoppingCart.jsx/shoppingCart";
 import TableGrid from "./Table/table";
 import StudentGrid from "./Students Grid/student";
 import UpdateText from "./Update Text/updateText";
+import UpdateName from "./update Name/updateName";
 
 function App() {
   const [view, setView] = useState(false);
@@ -64,7 +65,8 @@ function App() {
       {/* <ShoppingCard /> */}
       {/* <TableGrid /> */}
       {/* <StudentGrid /> */}
-      <UpdateText />
+      {/* <UpdateText /> */}
+      <UpdateName />
     </>
   );
 }
