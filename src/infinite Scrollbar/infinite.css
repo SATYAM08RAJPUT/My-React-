@@ -1,0 +1,6 @@
+.infinite-scrollbar {
+    min-height: 200vh; /* Ensures scrollable content */
+    padding: 20px;
+    border: solid 1px black;
+  }
+  

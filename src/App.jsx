@@ -20,6 +20,7 @@ import TableGrid from "./Table/table";
 import StudentGrid from "./Students Grid/student";
 import UpdateText from "./Update Text/updateText";
 import UpdateName from "./update Name/updateName";
+import InfiniteScroll from "./infinite Scrollbar/infiniteScroll";
 
 function App() {
   const [view, setView] = useState(false);
@@ -52,13 +53,13 @@ function App() {
       {/* <CommonParent /> */}
       {/* <CountNumber /> */}
       {/* <WindowResize /> */}
-      <button onClick={handleOpenModal}>Open</button>
+      {/* <button onClick={handleOpenModal}>Open</button>
       <ModalTwo isopen={view} onclose={handleCloseModal}>
         <p>Helo satyam</p>
         <input type="file" onChange={handleFilechange} />
-      </ModalTwo>
+      </ModalTwo> */}
       {/* <DyanmiSearchBar url={"https://jsonplaceholder.typicode.com/posts"} /> */}
-      <FetchApi />
+      {/* <FetchApi /> */}
       {/* <ToggleTheme /> */}
       {/* <FirstUseReducer /> */}
       {/* <SecondExample /> */}
@@ -66,7 +67,8 @@ function App() {
       {/* <TableGrid /> */}
       {/* <StudentGrid /> */}
       {/* <UpdateText /> */}
-      <UpdateName />
+      {/* <UpdateName /> */}
+      <InfiniteScroll />
     </>
   );
 }
