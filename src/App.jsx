@@ -21,7 +21,8 @@ import StudentGrid from "./Students Grid/student";
 import UpdateText from "./Update Text/updateText";
 import UpdateName from "./update Name/updateName";
 import InfiniteScroll from "./infinite Scrollbar/infiniteScroll";
-
+import SearchableDropdown from "./SearchableDropdown/searchabledropdown";
+const options = ["Apple", "Banana", "Cherry", "Date", "Grape", "Mango"];
 function App() {
   const [view, setView] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -41,6 +42,11 @@ function App() {
       selectedImage(imageUrl);
     }
   };
+
+  const handleSelect = (selectedOption) => {
+    console.log("Selected:", selectedOption);
+  };
+
   return (
     <>
       {/* <ColorPicker />
@@ -68,7 +74,8 @@ function App() {
       {/* <StudentGrid /> */}
       {/* <UpdateText /> */}
       {/* <UpdateName /> */}
-      <InfiniteScroll />
+      {/* <InfiniteScroll /> */}
+      <SearchableDropdown options={options} onSelect={handleSelect} />
     </>
   );
 }
