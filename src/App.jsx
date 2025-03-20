@@ -22,6 +22,7 @@ import UpdateText from "./Update Text/updateText";
 import UpdateName from "./update Name/updateName";
 import InfiniteScroll from "./infinite Scrollbar/infiniteScroll";
 import SearchableDropdown from "./SearchableDropdown/searchabledropdown";
+import Tab from "./Tab Component/tab";
 const options = ["Apple", "Banana", "Cherry", "Date", "Grape", "Mango"];
 function App() {
   const [view, setView] = useState(false);
@@ -75,7 +76,8 @@ function App() {
       {/* <UpdateText /> */}
       {/* <UpdateName /> */}
       {/* <InfiniteScroll /> */}
-      <SearchableDropdown options={options} onSelect={handleSelect} />
+      {/* <SearchableDropdown options={options} onSelect={handleSelect} /> */}
+      <Tab />
     </>
   );
 }
