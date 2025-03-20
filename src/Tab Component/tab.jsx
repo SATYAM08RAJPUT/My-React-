@@ -16,7 +16,9 @@ const Tab = () => {
     <>
       <div className="tab-container">
         {TabItem.map((itm) => (
-          <div onClick={() => handleTabChange(itm)}>{itm.title}</div>
+          <div onClick={() => handleTabChange(itm)} key={itm.id}>
+            {itm.title}
+          </div>
         ))}
       </div>
       {tab}
